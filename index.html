@@ -1,201 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Attock Cars - Premium Rent A Car Service in Attock and nearby areas. Economy, Business, and Executive vehicles available." />
+  <meta name="theme-color" content="#0b1f3a" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attock Cars | Premium Rent A Car Service</title>
 
-<title>Kitchen Master</title>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#0f172a">
+  <!-- PWA Manifest (later added) -->
+  <link rel="manifest" href="manifest.json">
 
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Kitchen Master">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
-
-<!-- PWA -->
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#0f172a">
-
-<!-- CSS -->
-<link rel="stylesheet" href="style.css">
+  <!-- Font (optional future CSS use) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- 👇 ADD THIS HERE (TOP OF BODY) -->
-<div class="hamburger" id="hamburger">
-  ☰
-</div>
-
-<div class="side-menu" id="sideMenu">
-  <button onclick="closeMenu()">Close ✖</button>
-
-  <a href="#">🏠 Home</a>
-  <a href="#">🍚 Recipes</a>
-  <a href="#">🧮 Calculator</a>
-  <a href="#">⚙ Settings</a>
-</div>
-
-
-
-
-
-
-<div class="app">
-
-<!-- TITLE -->
-<h1 id="title">🍳 Kitchen Master</h1>
-<!-- 
-POPUP
-<div id="overlay" class="overlay">
-
-<div class="modal">
-
-<h2>👋 Welcome!</h2>
-
-<p id="msgText"></p>
-
-<button id="closeBtn">
-OK
-</button>
-
-</div>
-
-</div> -->
-
-<!-- CONTROLS -->
-<div class="controls">
-
-<button
-class="toggle"
-id="langBtn"
->
-🌐 Switch Language
-</button>
-
-<input
-type="text"
-id="search"
-placeholder="Search item..."
->
-
-<select id="filter">
-
-<option value="all">
-All
-</option>
-
-<option value="rice">
-Rice
-</option>
-
-<option value="dal">
-Dal
-</option>
-
-<option value="meat">
-Meat
-</option>
-
-<option value="veg">
-Vegetable
-</option>
-
-<option value="raita">
-Raita
-</option>
-
-<option value="other">
-Other
-</option>
-
-</select>
-
-</div>
-
-<!-- RECIPE LIST -->
-<div id="list"></div>
-
-<!-- WATER CALCULATOR -->
-<div class="section">
-
-<h2 id="calcTitle">
-🧮 Water Calculator
-</h2>
-
-<select id="item">
-
-<option value="rice">
-Rice
-</option>
-
-<option value="dal">
-Dal
-</option>
-
-<option value="meat">
-Meat
-</option>
-
-<option value="chana">
-Chana
-</option>
-
-<option value="dough">
-Dough
-</option>
-
-</select>
-
-<input
-type="number"
-id="amount"
-placeholder="Enter amount"
->
-
-<button id="calcBtn">
-Calculate
-</button>
-
-<div id="result"></div>
-
-</div>
-
-</div>
-
-
-<!-- 
-  your app content here
- moder alert for cook app. with specific message -->
-  <div id="overlay" class="overlay">
-    <div class="modal">
-      <p id="msgText"></p>
-      <button id="closeBtn">OK</button>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="logo">
+      <h1>Attock Cars</h1>
+      <p>Premium Rent A Car Service</p>
     </div>
-  </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="whatsapp-btn" href="https://wa.me/923225063415" target="_blank">
+      Book on WhatsApp
+    </a>
+  </header>
 
 
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home">
+    <h2>Premium Car Rental Services in Attock</h2>
+    <p>
+      Reliable Cars. Professional Service. Every Journey Matters.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#fleet">Explore Fleet</a>
+      <a href="https://wa.me/923225063415?text=Hello%20Attock%20Cars%2C%20I%20want%20to%20book%20a%20car" target="_blank">
+        Book Now
+      </a>
+    </div>
+  </section>
 
 
-<!-- JS -->
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section id="services">
+    <h2>Why Choose Attock Cars</h2>
+
+    <ul>
+      <li>Well-maintained and clean vehicles</li>
+      <li>Affordable and transparent pricing</li>
+      <li>Available in Attock & nearby areas</li>
+      <li>Fast WhatsApp booking system</li>
+      <li>Professional customer support</li>
+    </ul>
+  </section>
+
+
+  <!-- ================= FLEET SECTION ================= -->
+  <section id="fleet">
+    <h2>Our Fleet</h2>
+
+    <div class="fleet-container">
+
+      <!-- Economy -->
+      <div class="car-category">
+        <h3>Economy Cars</h3>
+        <p>Budget-friendly vehicles for daily travel.</p>
+
+        <div class="car-card">
+          <h4>Toyota Corolla</h4>
+          <p>Fuel Efficient • Comfortable • Reliable</p>
+          <a href="https://wa.me/923225063415?text=I%20want%20to%20book%20Economy%20car" target="_blank">Book Now</a>
+        </div>
+
+        <div class="car-card">
+          <h4>Suzuki Cultus</h4>
+          <p>Small Family Car • Economical</p>
+          <a href="https://wa.me/923225063415?text=I%20want%20to%20book%20Cultus" target="_blank">Book Now</a>
+        </div>
+      </div>
+
+
+      <!-- Business -->
+      <div class="car-category">
+        <h3>Business Cars</h3>
+        <p>Comfort and style for meetings and travel.</p>
+
+        <div class="car-card">
+          <h4>Honda Civic</h4>
+          <p>Stylish • Comfortable • Executive Feel</p>
+          <a href="https://wa.me/923225063415?text=I%20want%20to%20book%20Business%20car" target="_blank">Book Now</a>
+        </div>
+
+        <div class="car-card">
+          <h4>Toyota Corolla Altis</h4>
+          <p>Premium Comfort • Smooth Drive</p>
+          <a href="https://wa.me/923225063415?text=I%20want%20to%20book%20Altis" target="_blank">Book Now</a>
+        </div>
+      </div>
+
+
+      <!-- Executive -->
+      <div class="car-category">
+        <h3>Executive Cars</h3>
+        <p>Luxury travel for VIP and special occasions.</p>
+
+        <div class="car-card">
+          <h4>Toyota Prado</h4>
+          <p>Luxury SUV • Strong Performance</p>
+          <a href="https://wa.me/923225063415?text=I%20want%20to%20book%20Prado" target="_blank">Book Now</a>
+        </div>
+
+        <div class="car-card">
+          <h4>Toyota Fortuner</h4>
+          <p>Executive SUV • Premium Comfort</p>
+          <a href="https://wa.me/923225063415?text=I%20want%20to%20book%20Fortuner" target="_blank">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <h2>About Attock Cars</h2>
+    <p>
+      Attock Cars provides reliable and professional car rental services in Attock and nearby areas.
+      We focus on comfort, safety, and customer satisfaction with a modern booking experience through WhatsApp.
+    </p>
+  </section>
+
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+
+    <blockquote>
+      “Excellent service and clean cars. Highly recommended!” – Ahmed R.
+    </blockquote>
+
+    <blockquote>
+      “Very professional and fast response on WhatsApp.” – Usman K.
+    </blockquote>
+
+    <blockquote>
+      “Best rent a car service in Attock.” – Ali S.
+    </blockquote>
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+
+    <p>WhatsApp: +92 322 5063415</p>
+    <p>Service Area: Attock & Nearby Regions</p>
+
+    <a href="https://wa.me/923225063415" target="_blank">
+      Message on WhatsApp
+    </a>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 Attock Cars. All Rights Reserved.</p>
+    <p>Premium Rent A Car Service in Attock</p>
+  </footer>
+
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <a class="floating-whatsapp" href="https://wa.me/923225063415" target="_blank">
+    WhatsApp
+  </a>
 <script src="script.js"></script>
-<script src="modal.js" defer></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("sw.js");
-  });
-}
-</script>
 </body>
 </html>
-
-
-
-
-
-

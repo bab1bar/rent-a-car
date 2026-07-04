@@ -1,0 +1,264 @@
+/* =========================
+   ATT0CK CARS - PREMIUM UI
+   ========================= */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #1c1c1c;
+  line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #0b1f3a;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo h1 {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+header .logo p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00d084;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  background: #25D366;
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+/* ================= HERO ================= */
+#home {
+  background: linear-gradient(rgba(11,31,58,0.8), rgba(11,31,58,0.8)),
+              url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+#home h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+#home p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-buttons a:first-child {
+  background: white;
+  color: #0b1f3a;
+}
+
+.hero-buttons a:last-child {
+  background: #25D366;
+  color: white;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #0b1f3a;
+}
+
+/* ================= SERVICES ================= */
+#services ul {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+}
+
+#services ul li {
+  background: white;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ================= FLEET ================= */
+.fleet-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.car-category {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.car-category h3 {
+  color: #0b1f3a;
+  margin-bottom: 10px;
+}
+
+.car-card {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  background: #eef3ff;
+}
+
+.car-card h4 {
+  margin-bottom: 5px;
+}
+
+.car-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #25D366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* ================= ABOUT ================= */
+#about p {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ================= TESTIMONIALS ================= */
+#testimonials blockquote {
+  background: white;
+  margin: 15px auto;
+  padding: 15px;
+  max-width: 600px;
+  border-left: 5px solid #0b1f3a;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ================= CONTACT ================= */
+#contact a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #0b1f3a;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #0b1f3a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ================= FLOATING WHATSAPP ================= */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #home h2 {
+    font-size: 28px;
+  }
+
+  .fleet-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
