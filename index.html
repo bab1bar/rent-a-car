@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kitchen Master</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f172a">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Kitchen Master">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f172a">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 👇 ADD THIS HERE (TOP OF BODY) -->
+<div class="hamburger" id="hamburger">
+  ☰
+</div>
+
+<div class="side-menu" id="sideMenu">
+  <button onclick="closeMenu()">Close ✖</button>
+
+  <a href="#">🏠 Home</a>
+  <a href="#">🍚 Recipes</a>
+  <a href="#">🧮 Calculator</a>
+  <a href="#">⚙ Settings</a>
+</div>
+
+
+
+
+
+
+<div class="app">
+
+<!-- TITLE -->
+<h1 id="title">🍳 Kitchen Master</h1>
+<!-- 
+POPUP
+<div id="overlay" class="overlay">
+
+<div class="modal">
+
+<h2>👋 Welcome!</h2>
+
+<p id="msgText"></p>
+
+<button id="closeBtn">
+OK
+</button>
+
+</div>
+
+</div> -->
+
+<!-- CONTROLS -->
+<div class="controls">
+
+<button
+class="toggle"
+id="langBtn"
+>
+🌐 Switch Language
+</button>
+
+<input
+type="text"
+id="search"
+placeholder="Search item..."
+>
+
+<select id="filter">
+
+<option value="all">
+All
+</option>
+
+<option value="rice">
+Rice
+</option>
+
+<option value="dal">
+Dal
+</option>
+
+<option value="meat">
+Meat
+</option>
+
+<option value="veg">
+Vegetable
+</option>
+
+<option value="raita">
+Raita
+</option>
+
+<option value="other">
+Other
+</option>
+
+</select>
+
+</div>
+
+<!-- RECIPE LIST -->
+<div id="list"></div>
+
+<!-- WATER CALCULATOR -->
+<div class="section">
+
+<h2 id="calcTitle">
+🧮 Water Calculator
+</h2>
+
+<select id="item">
+
+<option value="rice">
+Rice
+</option>
+
+<option value="dal">
+Dal
+</option>
+
+<option value="meat">
+Meat
+</option>
+
+<option value="chana">
+Chana
+</option>
+
+<option value="dough">
+Dough
+</option>
+
+</select>
+
+<input
+type="number"
+id="amount"
+placeholder="Enter amount"
+>
+
+<button id="calcBtn">
+Calculate
+</button>
+
+<div id="result"></div>
+
+</div>
+
+</div>
+
+
+<!-- 
+  your app content here
+ moder alert for cook app. with specific message -->
+  <div id="overlay" class="overlay">
+    <div class="modal">
+      <p id="msgText"></p>
+      <button id="closeBtn">OK</button>
+    </div>
+  </div>
+
+
+
+
+<!-- JS -->
+<script src="script.js"></script>
+<script src="modal.js" defer></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js");
+  });
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
